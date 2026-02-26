@@ -1,4 +1,5 @@
 import Icons from './utils/Icons.js';
+import Chef from './Chef.js';
 
 class Main {
   constructor() {
@@ -7,7 +8,7 @@ class Main {
 
   init() {
     Icons.load();
-    console.log('Main init working');
+    new Chef();
   }
 }
 new Main();

@@ -8,7 +8,11 @@ class Main {
 
   init() {
     Icons.load();
-    new Chef();
+    const chefs = document.querySelectorAll('[data-component="Chef"]');
+    for (let i = 0; i < chefs.length; i++) {
+      const chef = chefs[i];
+      new Chef(chef);
+    }
   }
 }
 new Main();
